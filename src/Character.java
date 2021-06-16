@@ -26,6 +26,10 @@ public abstract class Character implements Fight {
         else return 0;
     }
 
+    public int RandomValue() {
+        return (int) (Math.random() * 100);
+    }
+
     public String getName() {
         return name;
     }
@@ -72,10 +76,6 @@ public abstract class Character implements Fight {
 
     public void setForce(int force) {
         this.force = force;
-    }
-
-    public int RandomValue() {
-        return (int) (Math.random() * 100);
     }
 
     @Override
