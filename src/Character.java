@@ -22,7 +22,7 @@ public abstract class Character implements Fight {
 
     @Override
     public int attack() {
-        if (dexterity * 5 > RandomValue()) return force;
+        if (dexterity * 3 > RandomValue()) return force;
         else return 0;
     }
 
